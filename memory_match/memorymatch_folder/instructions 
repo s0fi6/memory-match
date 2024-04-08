@@ -1,5 +1,7 @@
-
 You have 16 cards and each one has a pair, it would be 8 cards with pairs. The pair of cards will have the same image, that is because we need to know when you win a pair. 
-1. Pick a random card 
-2. Pick another random card 
-Remember what image were 
+1. The objective of the game is to collect the most pairs of cards by remembering where they are
+2. Shuffle the cards and lay them on the table, face down, in rows of four. 
+4. On each turn, a player turns over any two cards and keeps them if the cards match 
+5. If they successfully match a pair that player continues with their turn.
+6. When the two cards do not match they are turned face down and remain in the same position as they were and the next player has its turn.
+8. The person with the most pairs at the end of the game wins.
