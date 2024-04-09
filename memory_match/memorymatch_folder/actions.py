@@ -18,5 +18,8 @@ def pick_card(board, reveal_cards):
 def match(board, row1, column1, row2, column2, row3, column3):
     pass
 
+#Display cards on board
+def display_cards(board, cards):
+    pass
 
 
