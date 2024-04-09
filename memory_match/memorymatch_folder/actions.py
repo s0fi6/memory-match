@@ -1,4 +1,4 @@
-#Suffle cards
+#Shuffle cards
 def shuffle_cards(board, cards, row, column):
     pass
 
