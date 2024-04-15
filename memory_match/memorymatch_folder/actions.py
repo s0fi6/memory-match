@@ -9,7 +9,7 @@ print(random.choice(deck))
 def reveal_cards(board, row, column):
     print
 
-#Flipp cards
+#Flip cards
 def flipp_cards(board, row, column):
     print
 
