@@ -1,54 +1,5 @@
-#Create board 
-from board import new_board
-
-#Display cards
-from actions import display_cards
-
-#Shuffle cards
-from actions import shuffle_cards
-
-#Reveal cards
-from actions import reveal_cards
-
-#Print current board
-from board import print_board
-
-#Flipp cards
-from actions import flipp_cards
-
-#Pick cards
-from actions import pick_card 
-
-#Check matching cards
-from actions import pick_card
-
-#All cards ready
-from board import all_cards
-
-#Winner
-from board import game_winner
-
-#Game over
-from board import game_over
-
-#Instructions 
-
-
-
-#Game Loop
-while True:
-    user_input = input("Enter 'start' to begin the game or 'exit' to quit: ")
-    if user_input == 'start':
-        print("Starting the game...")
-        break
-    elif user_input == 'exit':
-        print("Exiting the game...")
-        exit()
-    else:
-        print("Invalid input. Please enter 'start' or 'exit'.")
-
-#Empty board onscreen
-from board import new_board, print_board
+from board import new_board, print_board, all_cards, game_winner, game_over
+from actions import display_cards, shuffle_cards, reveal_cards, flipp_cards, pick_card, match  
 
 def main():
     rows = 4  # Example board size
@@ -63,6 +14,15 @@ with open('README.md', 'r') as f:
     print(f.read())
 
 while True:
+    user_input = input("Enter 'start' to begin the game or 'exit' to quit: ")
+    if user_input == 'start':
+        print("Starting the game...")
+        break
+    elif user_input == 'exit':
+        print("Exiting the game...")
+        exit()
+    else:
+        print("Invalid input. Please enter 'start' or 'exit'.")
     command = input("Enter a command: ")
     if command == "Create board":
         new_board(rows, columns)
