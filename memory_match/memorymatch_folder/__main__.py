@@ -27,10 +27,18 @@ while True:
 while True:
     command = input("Enter a command: ")
     if command == "Create board":
-        new_board(rows, columns)
+        rows = None
+        columns=None
+        board = new_board(rows, columns)
     elif command == "Display cards":
+        board =None
+        cards=None
         display_cards(board, cards)
     elif command == "Shuffle cards":
+        board=None
+        cards=None
+        rows = None
+        column=None
         shuffle_cards(board, cards, row, column)
     elif command == "Reveal cards":
         board = None
@@ -39,8 +47,8 @@ while True:
         column = None
         reveal_cards(board, row, column)
     elif command == "Print current board":
+        board = new_board()
         print_board(board)
-        board = None
     elif command == "Flipp cards":
         flipp_cards(board, row, column)
         board = None 
