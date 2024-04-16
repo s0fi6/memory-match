@@ -1,19 +1,19 @@
 #Create new board
 def new_board(rows, columns):
-    pass
+    print("Create new board")
 
 #Print current board
 def print_board(row1, column1, row2, column2, row3, column3):
-    pass
+    print("Print current board")
 
 #All cards ready
 def all_cards(rows, columns):
-    pass
+    print("All cards ready")
 
 #Winner
 def game_winner(board, word_winner):
-    pass
+    print("Winner")
 
 #Game over
 def game_over(board, word_loser):
-    pass
+    print("Game over")
