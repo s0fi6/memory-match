@@ -23,6 +23,8 @@ while True:
         exit()
     else:
         print("Invalid input. Please enter 'start' or 'exit'.")
+
+while True:
     command = input("Enter a command: ")
     if command == "Create board":
         new_board(rows, columns)
