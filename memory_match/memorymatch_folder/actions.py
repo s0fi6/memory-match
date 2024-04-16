@@ -1,9 +1,6 @@
 #Shuffle cards
-import random
-def shuffle_cards(deck):
-    random.shuffle(deck)
-
-print(random.choice(deck))
+def shuffle_cards(board,cards):
+    print("shuffle cards")
 
 #Reveal cards 
 def reveal_cards(board, row, column):

@@ -78,17 +78,33 @@ while True:
         reveal_cards(board, row, column)
     elif command == "Print current board":
         print_board(board)
+        board = None
     elif command == "Flipp cards":
         flipp_cards(board, row, column)
+        board = None 
+        row = None
+        column = None
     elif command == "Pick cards":
         pick_card(board, reveal_cards)
+        board = None
     elif command == "Check matcing cards":
         pick_card(board, row1, column1, row2, column2, row3, column3)
+        board = None
+        row1 = None
+        column1 = None
+        row2 = None
+        column2 = None
+        row3 = None
+        column3 = None
     elif command == "All cards ready":
         all_cards(rows, columns)
+        rows = None
+        columns = None
     elif command == "Winner":
         game_winner(board, winner)
+        winner = None
     elif command == "Game over":
         game_over(board, loser)
+        loser = None
     else:
         print("I did not understand this command.")
