@@ -37,21 +37,17 @@ def test_reveal_cards():
                   [" ", " ", " ", " "]], 0, 0)
 
 # Run the test cases
-test_reveal_cards
+test_reveal_cards()
 
-def test_flip_cards():
 
-sample_board = [["", "", "", ""],
-             ["", "", "", ""],
-             ["", "", "", ""],
-             ["", "", "", ""]]
+sample_board = [["DOG", "CAT", "GIRAFFE", "RACOON"],
+             ["DOG", "CAT", "GIRAFFE", "RACOON"],
+             ["BEE", "PANDA", "FISH", "MONKEY"],
+             ["BEE", "PANDA", "FISH", "MONKEY"]]
 
-def print_board(board):
-    for row in board:
-        print(' '.join(row))
 
 # Test code to flip a card at row=1, column=1
 print("Initial board:")
-print_board(sample_board)
+print(sample_board)
 print("Fliping card at row=1, column=1:")
 flip_cards(sample_board, 1, 1)
