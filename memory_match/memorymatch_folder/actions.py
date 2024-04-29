@@ -7,7 +7,7 @@ def reveal_cards(board, row, column):
     print("reveal cards")
 
 #Flip cards
-def flipp_cards(board, row, column):
+def flip_cards(board, row, column):
     print("reveal cards")
 
 #Pick card

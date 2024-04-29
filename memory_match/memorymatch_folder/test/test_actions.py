@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from actions import shuffle_cards, reveal_cards
+from actions import shuffle_cards, reveal_cards, flip_cards
 
 def test_shuffle_cards():
     
@@ -37,15 +37,14 @@ def test_reveal_cards():
                   [" ", " ", " ", " "]], 0, 0)
 
 # Run the test cases
-test_reveal_cards()
- 
-def flip_cards(board, row, column):
-    print("reveal cards")
+test_reveal_cards
 
-sample_board = [["DOG", "CAT", "GIRAFFE", "RACOON"],
-             ["DOG", "CAT", "GIRAFFE", "RACOON"],
-             ["BEE", "PANDA", "FISH", "MONKEY"],
-             ["BEE", "PANDA", "FISH", "MONKEY"]]
+def test_flip_cards():
+
+sample_board = [["", "", "", ""],
+             ["", "", "", ""],
+             ["", "", "", ""],
+             ["", "", "", ""]]
 
 def print_board(board):
     for row in board:
