@@ -40,10 +40,11 @@ def test_reveal_cards():
 test_reveal_cards()
 
 
-sample_board = [["DOG", "CAT", "GIRAFFE", "RACOON"],
-             ["DOG", "CAT", "GIRAFFE", "RACOON"],
-             ["BEE", "PANDA", "FISH", "MONKEY"],
-             ["BEE", "PANDA", "FISH", "MONKEY"]]
+
+sample_board = [["", "", "", ""],
+             ["", "", "", ""],
+             ["", "", "", ""],
+             ["", "", "", ""]]
 
 
 # Test code to flip a card at row=1, column=1
