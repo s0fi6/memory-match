@@ -56,3 +56,20 @@ def test_flip_cards():
     print_board(sample_board)
 
 test_flip_cards()
+
+def test_pick_card():
+    sample_board = [["DOG", "CAT", "GIRAFFE", "RACOON"],
+                    ["DOG", "CAT", "GIRAFFE", "RACOON"],
+                    ["BEE", "PANDA", "FISH", "MONKEY"],
+                    ["BEE", "PANDA", "FISH", "MONKEY"]]
+    
+    print("Testing pick card function:")
+    # Test code to pick a card at row=1, column=1
+    print("Initial board:")
+    print_board(sample_board)
+    print("picking card at row=1, column=1:")
+    flip_cards(sample_board, 1, 1)
+    print("Updated board:")
+    print_board(sample_board)
+
+test_pick_card()
