@@ -1,5 +1,5 @@
 #Shuffle cards
-def shuffle_cards(board,cards):
+def shuffle_cards(board, cards):
     print("shuffle cards")
 
 #Reveal cards 
