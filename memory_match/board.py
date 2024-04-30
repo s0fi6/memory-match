@@ -1,10 +1,14 @@
 #Create new board
 def new_board():
-   board = [[" ", " ", " ", " "],
-            [" ", " ", " ", " "],
-            [" ", " ", " ", " "],
-            [" ", " ", " ", " "]]
-   return board
+    board = [["DOG", "CAT", "GIRAFFE", "RACOON"],
+        ["DOG", "CAT", "GIRAFFE", "RACOON"],
+        ["BEE", "PANDA", "FISH", "MONKEY"],
+        ["BEE", "PANDA", "FISH", "MONKEY"]]
+    flipped = [[False, False, False, False],
+            [False, False, False, False],
+            [False, False, False, False],
+            [False, False, False, False]]
+    return board, flipped
 
 #Print current board
 def print_board(board):

@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from memorymatch_folder.board import new_board, print_board, all_cards, game_winner, game_over
+from memory_match.board import new_board, print_board, all_cards, game_winner, game_over
 
 def test_new_board():
     print("Testing new_board function...")

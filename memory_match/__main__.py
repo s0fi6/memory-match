@@ -1,5 +1,5 @@
 from board import new_board, print_board, all_cards, game_winner, game_over
-from actions import display_cards, shuffle_cards, reveal_cards, flipp_cards, pick_card, match  
+from actions import display_cards, shuffle_cards, reveal_cards, match  
 
 def main():
     rows = 4  # Example board size
@@ -27,7 +27,7 @@ while True:
 while True:
     command = input("Enter a command: ")
     if command == "Create board":
-        board = new_board() 
+        board, flipped = new_board() 
     elif command == "Display cards":
         board =None
         cards=None
@@ -52,18 +52,12 @@ while True:
         board = None 
         row = None
         column = None
-    elif command == "Pick cards":
-        pick_card(board, reveal_cards)
-        board = None
-    elif command == "Check matcing cards":
-        pick_card(board, row1, column1, row2, column2, row3, column3)
-        board = None
-        row1 = None
-        column1 = None
-        row2 = None
-        column2 = None
-        row3 = None
-        column3 = None
+    elif command == "Match":
+        pos1 = input("Pick first card:")
+
+        pos2 = input("Pick second card:")
+
+        match(..., ..., ..., ..., ..., ...)
     elif command == "All cards ready":
         all_cards(rows, columns)
         rows = None
