@@ -49,3 +49,14 @@ def test_winner():
         print("WINNER")
 
 test_winner()
+
+def test_game_over():
+    print(game_over)
+    board = [["DOG", "CAT", "GIRAFFE", "RACOON"],
+                    ["DOG", "CAT", "GIRAFFE", "RACOON"],
+                    ["BEE", "PANDA", "FISH", "MONKEY"],
+                    ["BEE", "PANDA", "FISH", "MONKEY"]]
+    loser_name = "loser"
+    print("You have lost")
+    print("loser")
+test_game_over()
