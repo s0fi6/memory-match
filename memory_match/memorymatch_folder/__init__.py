@@ -1,1 +1,2 @@
-from .module import *
+from .actions import *
+from .board import *

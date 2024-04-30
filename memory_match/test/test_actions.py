@@ -2,8 +2,8 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from actions import display_cards, shuffle_cards, reveal_cards, flip_cards, match, display_cards
-from board import print_board
+from memorymatch_folder.actions import display_cards, shuffle_cards, reveal_cards, flip_cards, match, display_cards
+from memorymatch_folder.board import print_board
 def test_shuffle_cards():
     
     sample_board = [["DOG", "CAT", "GIRAFFE", "RACOON"],
