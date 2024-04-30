@@ -23,12 +23,16 @@ while True:
         exit()
     else:
         print("Invalid input. Please enter 'start' or 'exit'.")
-
+#Launch GAME starts
+board, flipped = new_board()        
 while True:
+    #Per Turn
+    print_board(board)
     command = input("Enter a command: ")
-    if command == "Create board":
-        board, flipped = new_board() 
-    elif command == "Display cards":
+    
+        #Every time u use the command
+         
+    if command == "Display cards":
         board =None
         cards=None
         display_cards(board, cards)
@@ -46,15 +50,15 @@ while True:
         reveal_cards(board, row, column)
     elif command == "Print current board":
         board = new_board()
-        print_board(board)
+        
     elif command == "Flipp cards":
         flipp_cards(board, row, column)
         board = None 
         row = None
         column = None
-    elif command == "Match":
+    elif command == "Match": #MAIN COMMAND
         pos1 = input("Pick first card:")
-
+        print_board(board)
         pos2 = input("Pick second card:")
 
         match(..., ..., ..., ..., ..., ...)
