@@ -35,5 +35,17 @@ print("Starting a new memory match game...")
 all_cards(rows, columns)
 
 def test_winner():
-    
 
+    def all_cards_matched(board):
+        return all(card == "matched" for row in board for card in row)
+    
+    board = [["DOG", "CAT", "GIRAFFE", "RACOON"],
+                    ["DOG", "CAT", "GIRAFFE", "RACOON"],
+                    ["BEE", "PANDA", "FISH", "MONKEY"],
+                    ["BEE", "PANDA", "FISH", "MONKEY"]]
+
+    if all_cards_matched(board): 
+        print("All cards matched!")
+        print("WINNER")
+
+test_winner()
