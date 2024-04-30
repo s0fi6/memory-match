@@ -23,5 +23,17 @@ def test_print_board():
     print("Printed the board successfully.")
     print()
 
+def test_all_cards():
+    print("Preparing cards:".format(rows, columns))
+    total_pairs = (rows*columns)//2
+    print("Total pairs of cards to prepare:", total_pairs)
+   
+rows = 4
+columns = 4
+print("Starting a new memory match game...")
 
+all_cards(rows, columns)
+
+def test_winner():
+    
 
