@@ -23,44 +23,36 @@ while True:
         exit()
     else:
         print("Invalid input. Please enter 'start' or 'exit'.")
-#Launch GAME starts
+
 board, flipped = new_board()        
 while True:
-    #Per Turn
-    print_board(board)
-    command = input("Enter a command: ")
     
-        #Every time u use the command
-         
-    if command == "Display cards":
-        board =None
-        cards=None
-        display_cards(board, cards)
-    elif command == "Shuffle cards":
-        shuffle_cards(board, flipped)
-    elif command == "Print current board":
-        board = new_board()
-        
-    elif command == "Flipp cards":
-        flipp_cards(board, row, column)
-        board = None 
-        row = None
-        column = None
-    elif command == "Match": #MAIN COMMAND
-        pos1 = input("Pick first card:")
-        print_board(board)
-        pos2 = input("Pick second card:")
+    print_board(board, flipped)
+    command = input("Enter a command: ")
 
-        match(..., ..., ..., ..., ..., ...)
-    elif command == "All cards ready":
-        all_cards(rows, columns)
-        rows = None
-        columns = None
-    elif command == "Winner":
-        game_winner(board, winner)
-        winner = None
-    elif command == "Game over":
-        game_over(board, loser)
-        loser = None
+    if command == "Shuffle cards":
+        shuffle_cards(board, flipped)
+   
+    elif command == "Match": 
+         row1 = int(input("Enter the first card's row number: "))
+        column1 = int(input("Enter the first card's column number: "))
+        row2 = int(input("Enter the second card's row number: "))
+        column2 = int(input("Enter the second card's column number: "))
+        matched = match(board, flipped, row1, column1, row2, column2)
+        if matched:
+            print("Cards match!")
+            input("Enter the name of the winner: ")
+            game_winner(board, winner)
+            flipped[row1][column1] = True
+            flipped[row2][column2] = True
+        else:
+            print("Cards don't match!")
+            print("First card:", board[row1][column1])
+            print("Second card:", board[row2][column2])
+
+    elif command == 'exit':
+    print("Exiting the game...")
+    exit()
+    
     else:
-        print("I did not understand this command.")
+     print("I did not understand this command. Please try again.")
