@@ -1,11 +1,11 @@
 import sys
 import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))) #Original by Chatgptp
 
 from memory_match.actions import shuffle_cards, flip_cards, match
 from memory_match.board import print_board, new_board
 
-#ASSERT = please make sure that
+
 def test_shuffle(): 
   print("Testing shuffle card")
   board, flipped = new_board()
