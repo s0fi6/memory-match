@@ -24,10 +24,6 @@ def print_board(board, flipped):
  """
     )
 
-#All cards ready
-def all_cards(rows, columns):
-    print("All cards ready")
-
 #Winner
 def game_winner(board, word_winner):
     print("Winner")

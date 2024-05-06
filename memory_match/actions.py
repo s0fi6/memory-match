@@ -15,10 +15,12 @@ def flip_cards(board, row, column):
 
 #Check matching cards
 def match(board, flipped, row1, column1, row2, column2):
-    print("check matching cards")
+    card1 = board[row1][column1]
+    card2 = board[row2][column2]
+    if card1 == card2:
+        return True
+    else:
+        return False
 
-#Display cards on board
-def display_cards(board, cards):
-    print("display cards on board")
 
 

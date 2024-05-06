@@ -37,17 +37,7 @@ while True:
         cards=None
         display_cards(board, cards)
     elif command == "Shuffle cards":
-        board=None
-        cards=None
-        rows = None
-        column=None
-        shuffle_cards(board, cards, row, column)
-    elif command == "Reveal cards":
-        board = None
-        row = None
-        cards = None
-        column = None
-        reveal_cards(board, row, column)
+        shuffle_cards(board, flipped)
     elif command == "Print current board":
         board = new_board()
         
