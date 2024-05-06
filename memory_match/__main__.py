@@ -1,9 +1,9 @@
-from board import new_board, print_board, all_cards, game_winner, game_over
-from actions import display_cards, shuffle_cards, reveal_cards, match  
+from board import new_board, print_board
+from actions import shuffle_cards, match  
 
 def main():
-    rows = 4  # Example board size
-    cols = 4  # Example board size
+    rows = 4
+    cols = 4  
     board = new_board(rows, cols)
 
     print("Welcome to the Memory Match Game!")
@@ -34,15 +34,13 @@ while True:
         shuffle_cards(board, flipped)
    
     elif command == "Match": 
-         row1 = int(input("Enter the first card's row number: "))
+        row1 = int(input("Enter the first card's row number: "))
         column1 = int(input("Enter the first card's column number: "))
         row2 = int(input("Enter the second card's row number: "))
         column2 = int(input("Enter the second card's column number: "))
         matched = match(board, flipped, row1, column1, row2, column2)
         if matched:
             print("Cards match!")
-            input("Enter the name of the winner: ")
-            game_winner(board, winner)
             flipped[row1][column1] = True
             flipped[row2][column2] = True
         else:
@@ -51,8 +49,8 @@ while True:
             print("Second card:", board[row2][column2])
 
     elif command == 'exit':
-    print("Exiting the game...")
-    exit()
+     print("Exiting the game...")
+     exit()
     
     else:
      print("I did not understand this command. Please try again.")

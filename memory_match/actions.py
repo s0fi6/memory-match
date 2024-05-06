@@ -3,7 +3,7 @@ import random
 def shuffle_cards(board, flipped):
     for sublist in board:
         random.shuffle(sublist)
-
+    print ("Cards shuffled.")
 # Reveal cards
 def reveal_cards(board, row, column, flipped):
     print(f"Revealing card at row {row}, column {column}: {board[row][column]}")
