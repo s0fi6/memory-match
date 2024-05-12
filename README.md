@@ -5,10 +5,13 @@ Commands:
 Shuffle cards
 Match
 Start
-Exit 
+Exit: Exit the game
+
+Rows and Columns:
+The game only has 0-3 rows and columns so when the game asks you to provide the rows and columns number you need to choose between 0-3 
 
 Steps to play:
-1. Enter the command "Shuffle cards" for shuffling the cards.
+1. Enter the command "start" and then enter "Shuffle cards" for shuffling the cards.
 2. Enter the command "Match" to start matching the cards.
 3. Enter the first card's row number
 4. Enter the first card's column number
